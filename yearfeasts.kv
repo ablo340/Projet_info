@@ -1,0 +1,71 @@
+# sharemylinks.kv
+# author: Sébastien Combéfis
+# version: November 20, 2016
+
+YearFeastsForm:
+    rows: 10
+    cols: 1
+    feasts_spr: feasts
+    detail_txt: detail
+    feast_txt: feast
+    date_txt: date
+    tradition_txt: tradition
+    origins_txt: origin
+    Label:
+        text: str(len(root.feasts)) + ' fetes charger.'
+        size_hint_y: 1
+    Spinner:
+        id: feasts
+        text: 'afficher les fetes'
+        values: root.titles
+        size_hint_y: 1
+        on_text: root.showdetail(self.text)
+    TextInput:
+        id: detail
+        readonly: True
+        size_hint_y: 7
+    Button:
+        text: 'Supprimer'
+        on_press: root.delete()
+
+    BoxLayout:
+        orientation: 'horizontal'
+        Label:
+            text: 'ajouter une fete'
+
+    BoxLayout:
+        orientation: 'horizontal'
+        Label:
+            text: 'Fete'
+        TextInput:
+            id: feast
+
+    BoxLayout:
+        orientation: 'horizontal'
+        Label:
+            text: 'Date'
+        TextInput:
+            id: date
+
+
+    BoxLayout:
+        orientation: 'horizontal'
+        Label:
+            text: 'Tradition'
+        TextInput:
+            id: tradition
+
+    BoxLayout:
+        orientation: 'horizontal'
+        Label:
+            text: 'Origine'
+        TextInput:
+            id: origin
+
+    BoxLayout:
+        orientation: 'horizontal'
+        Button:
+            text: 'Ajouter'
+            on_press: root.add()
+
+

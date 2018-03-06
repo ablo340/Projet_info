@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+      <link rel="stylesheet" href="static/main.css" />
+      <title>Ajout de d'evenement</title>
+  </head>
+  <body>
+
+    <table>
+        <tr>
+            <td> <a href="index"> <img src="static/fete.jpg" widht="1000" height="100"></a></td>
+            <td><a href="index"> Accueil</a> </td>
+            <td><a href="add"> Ajouter une fête</a> </td>
+        </tr>
+    </table>
+
+    <h1>Ajouter une fête</h1>
+
+    <form method="post" action="addevent">
+      <p>
+        <label>FETE<br /><input type="text" name="feast" id="feast" placeholder="Ex : mon anniversaire" maxlength="128" required></label>
+      </p>
+      <p>
+        <label>DATE<br /><input type="text" name="date" id="date" maxlength="128" placeholder="Ex : 4 mars " required></label>
+      </p>
+      <p>
+        <label>TRADITION<br /><textarea name="tradition" id="tradition" rows="5" cols="40" placeholder="Ex : Je le fête toujours en famille" /></textarea></label>
+      </p>
+      <p>
+        <label>ORIGINES<br /><textarea name="origins" id="origins" rows="5" cols="40" placeholder="Ex : Le jour de ma naissance" /></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Ajouter</button>
+      </p>
+    </form>
+
+  </body>
+</html>

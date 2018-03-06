@@ -1,0 +1,38 @@
+body{
+background-color: yellow;
+text-align: center;
+border: 10px double black;
+border-radius: 15px
+}
+h1{
+text-shadow: 10px 10px 50px red;
+font-size: 25px;
+border: 2px dashed red;
+width: 400px;
+margin: 0px auto;
+text-align: center;
+}
+
+h2{
+text-align: center;
+font-size: 20px;
+}
+
+p{
+font-size: 20px; /* Paragraphes de 20 pixels */
+}
+a{
+font-size: 20px;
+text-align: center;
+}
+table{
+border: 2px solid red;
+
+margin: 50px auto;
+text-align: center;
+}
+#p1{
+text-align: left;
+font-size: 10px;
+}
+
